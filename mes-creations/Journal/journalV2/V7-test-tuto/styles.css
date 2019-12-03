@@ -1,0 +1,254 @@
+html, body{
+        background: #DFC29F; /*couleur de fond*/
+        font-family: 'Bahagia', sans-serif;
+        font-size: 16px;
+        line-height: 1.4;
+        height: 100%;
+
+        margin: 0;
+        padding: 0;
+        color: black; /*couleur du titre et texte du contenu*/
+}
+
+.bg-primary {
+    background-color: #AB7337!important; /*forcer le bandeau a changé de couleur*/
+}
+.header .nav-item{ /*logo a gauche a verifier*/
+    position:relative;  
+    float: left!important;
+    margin-left: 10px!important;
+}
+a{  
+    text-decoration: none; 
+    color: red/*inherit*/;
+    }
+#bloc_page
+    {
+        width: 900px;
+        margin: auto;
+    }
+section h1, footer h1, nav a
+    {
+        font-family: 'Dayrom', serif;
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+
+.header .text{ /*titre site*/
+        display: inline-block;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+ 
+@media only screen and (max-width: 750px) {
+    .header__icon {
+        position: relative;
+        display: block;
+        float: left;
+        width: 155px; /*35*/
+        height: 50px;
+        cursor: pointer;
+
+        &:after{
+            content:'';
+            position:absolute;
+            display: block;
+            width: 25px;
+            height: 0;
+            @include box-shadow: (0 10px 0 1px #0000, 0 16px 0 1px #0000, 0 22px 0 1px #0000);
+            
+        
+        }
+    }
+}
+     /* Toujours dans le @media */
+  .with--sidebar .site-pusher {
+    transform: translateX(-450px); 
+  }
+  /* On met un cache par dessus le site-content pour bloquer le scroll et permettre le retour au site */
+  .with--sidebar .site-cache {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); 
+  }
+    /* Bannière */
+
+    .container-fluid/*.site.content*/
+    {
+        height: 200px; /*hauteur de l'img du mec sur sa montagne*/
+        border-radius: 115px; /*bord arrondi*/
+        background: url('images/montagne1.jpg') no-repeat center;
+        position: relative; /**/
+        margin-bottom: 75px;
+    }
+
+    #description p /* retour sur mon voyage */
+    {
+       position: absolute; 
+       float: left;  
+        left: 90px; 
+    }
+
+    .btn_fleche /*couleur du btn 'voir l'article ' */
+    {
+        display:absolute /*inline-block*/;
+        height: 25px;
+        position: absolute;
+        right: 80px; /*decallage du btn*/
+        bottom: 5px;
+        background: #DFC29F; /* couleur de l'ecriture */
+        border: 1px solid white; /* encadré blanc*/
+        border-radius: 2px;
+        font-size: 1.2em;
+        text-align: center;
+        padding: 0px 50px 0px 10px; /*je sais pas*/
+        color: black;
+        text-decoration: none;
+        float: left;
+
+    }
+
+
+    /* Corps */
+
+    article, aside
+    {
+        display: inline-block;
+        vertical-align: top;
+        text-align: justify;
+    }
+
+    article
+    {
+        width: 625px;
+        margin-right: 15px;
+    }
+
+    .ico_categorie
+    {
+        vertical-align: middle;
+        margin-right: 8px;
+    }
+
+    article p
+    {
+        font-size: 0.8em;
+    }
+
+    aside /*bloc A propos*/
+    {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        width: 600px;
+       background-color: #DFC29F; /* couleur du bloc  */
+        text-align: center;  
+
+        /*position: relative;
+        width: 235px;
+        background-color: brown;
+        box-shadow: 0px 2px 5px #1c1a19;
+        border-radius: 5px;
+        padding: 10px;
+        color: white;
+        font-size: 0.9em;*/
+    }
+
+    #fleche
+    {
+        position: absolute;
+        top: 300px;
+        left: -12px;
+
+    }
+    #photo-profil /*img taille de l'img de profil*/
+    {
+        text-align: center;  
+    }
+
+    aside img
+    {
+        margin-right: 5px;
+        width: 50px;
+        height: 50px;
+    }
+
+    /* Footer */
+
+
+
+    /*footer p, footer ul
+    {
+        font-size: 0.8em;
+    }
+    footer h1
+    {
+        font-size: 1.1em;
+    }*/
+
+    div#tweet
+    {
+        font-size: 0.8em;
+        text-align: center;
+        vertical-align: center;
+        width: 180px;
+        float: left;
+        background: pink;
+    }
+    div#paysage
+    {
+        width: 180px;
+        margin-left: 120px;
+        margin-right: 150px;
+        background: pink;
+    }
+
+    div#liste_amis
+    {
+        float: right;
+        background: #CBAF8C; /* couleur de fond de la liste d'amis*/
+        width: 200px; /*180*/
+        margin-right: 200px;
+
+
+    }
+
+    div#paysage img /*img paysage*/
+    {
+        border: 1px solid;
+        margin-right: 2px;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+    }
+    
+    #liste_amis ul
+    {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 0;
+        width: 48%;
+        list-style-image: url('images/.png');
+        padding-left: 2px;
+    }
+
+    #liste_amis a
+    {
+        text-decoration: none;
+        color: #9C4800; /*couleur de la liste d'amis*/ 
+}
+} /*fermeture de la balise pour responsive format mobile*/
+
+/*ALIGNEMENT CAROUSEL ET AMIS
+.footer_aligne span.gauche {
+  float: left;
+}*/
+.footer_aligne{
+    float: center;
+    text-align: center;
+    margin: 20px 20px 20px; /* 3 valeurs */
+}

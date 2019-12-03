@@ -1,0 +1,292 @@
+html, body{
+        background: #DFC29F; /*couleur de fond*/
+        font-family: 'Bahagia', sans-serif;
+        font-size: 16px;
+        line-height: 1.4;
+        height: 100%;
+
+        margin: 0;
+        padding: 0;
+        color: black; /*couleur du titre et texte du contenu*/
+    }
+.nav-item_active{
+    text-align: center;
+}
+a{  
+    text-decoration: none; 
+    color: red/*inherit*/;
+    }
+#bloc_page
+    {
+        width: 900px;
+        margin: auto;
+    }
+section h1, footer h1, nav a
+    {
+        font-family: 'Dayrom', serif;
+        font-weight: normal;
+        text-transform: uppercase;
+    }
+header h1
+    {
+        font-family: '', serif;
+        font-size: 2.5em;
+        font-weight: normal;
+        /*vertical-align: 140%; faire descendre le petit encadré */
+    }
+#logo, header h1
+    {
+        display: inline-block;
+        margin-bottom: 0px;
+    }
+header h2
+    {
+        font-family: Dayrom, serif;
+        font-size: 1.1em;
+        margin-top: 0px;
+        font-weight: normal;
+    }
+    /*Responsive carré en haut a gauche
+   @media only screen and (max-width: 750px) {
+            .header__icon {
+                display: block;
+                width: 50px;
+                height: 50px;
+                background-color: pink;
+            }
+        }*/ 
+@media only screen and (max-width: 750px) {
+    .header__icon {
+        position: relative;
+        display: block;
+        float: left;
+        width: 155px; /*35*/
+        height: 50px;
+        cursor: pointer;
+
+        &:after{
+            content:'';
+            position:absolute;
+            display: block;
+            width: 25px;
+            height: 0;
+            @include box-shadow: (0 10px 0 1px #0000, 0 16px 0 1px #0000, 0 22px 0 1px #0000);
+            
+        
+        }
+    }
+}
+    /* Navigation */
+/*
+    nav
+    {
+        display: inline-block;
+        width: 600px;    /* deplament droite a gauche du menu
+        text-align: right;
+        vertical-align: sub;
+        float: right;
+    }
+
+    nav ul
+    {
+        list-style-type: none;
+
+    }
+
+    nav li
+    {
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    nav a
+    {
+        font-size: 1.3em;
+        color: #181818;
+        padding-bottom: 3px;
+        text-decoration: none;
+    }
+
+    nav a:hover
+    {
+        color: #760001;
+        border-bottom: 3px solid #760001;
+    }
+*/
+    /* Bannière */
+
+    .container-fluid/*.site.content*/
+    {
+        height: 200px; /*hauteur de l'img du mec sur sa montagne*/
+        border-radius: 115px; /*bord arrondi*/
+        background: url('images/montagne1.jpg') no-repeat center;
+        position: relative; /**/
+        margin-bottom: 75px;
+    }
+
+    #description p /* retour sur mon voyage */
+    {
+       position: absolute; 
+       float: left;  
+        left: 90px; 
+    }
+
+    .btn_fleche /*couleur du btn 'voir l'article ' */
+    {
+        display:absolute /*inline-block*/;
+        height: 25px;
+        position: absolute;
+        right: 80px; /*decallage du btn*/
+        bottom: 5px;
+        background: #DFC29F; /* couleur de l'ecriture */
+        border: 1px solid white; /* encadré blanc*/
+        border-radius: 2px;
+        font-size: 1.2em;
+        text-align: center;
+        padding: 0px 50px 0px 10px; /*je sais pas*/
+        color: black;
+        text-decoration: none;
+        float: left;
+
+    }
+
+
+    /* Corps */
+
+    article, aside
+    {
+        display: inline-block;
+        vertical-align: top;
+        text-align: justify;
+    }
+
+    article
+    {
+        width: 625px;
+        margin-right: 15px;
+    }
+
+    .ico_categorie
+    {
+        vertical-align: middle;
+        margin-right: 8px;
+    }
+
+    article p
+    {
+        font-size: 0.8em;
+    }
+
+    aside /*bloc A propos*/
+    {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        width: 600px;
+       background-color: #DFC29F; /* couleur du bloc  */
+        text-align: center;  
+
+        /*position: relative;
+        width: 235px;
+        background-color: brown;
+        box-shadow: 0px 2px 5px #1c1a19;
+        border-radius: 5px;
+        padding: 10px;
+        color: white;
+        font-size: 0.9em;*/
+    }
+
+    #fleche
+    {
+        position: absolute;
+        top: 300px;
+        left: -12px;
+
+    }
+    #photo-profil /*img taille de l'img de profil*/
+    {
+        text-align: center;  
+    }
+
+    aside img
+    {
+        margin-right: 5px;
+        width: 50px;
+        height: 50px;
+    }
+
+    /* Footer */
+
+
+
+    /*footer p, footer ul
+    {
+        font-size: 0.8em;
+    }
+    footer h1
+    {
+        font-size: 1.1em;
+    }*/
+
+    div#tweet
+    {
+        font-size: 0.8em;
+        text-align: center;
+        vertical-align: center;
+        width: 180px;
+        float: left;
+        background: pink;
+    }
+    div#paysage
+    {
+        width: 180px;
+        margin-left: 120px;
+        margin-right: 150px;
+        background: pink;
+    }
+
+    div#liste_amis
+    {
+        float: right;
+        background: #CBAF8C; /* couleur de fond de la liste d'amis*/
+        width: 200px; /*180*/
+        margin-right: 200px;
+
+
+    }
+
+    div#paysage img /*img paysage*/
+    {
+        border: 1px solid;
+        margin-right: 2px;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+    }
+    /*
+    #liste_amis ul
+    {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 0;
+        width: 48%;
+        list-style-image: url('images/.png');
+        padding-left: 2px;
+    }*/
+
+    #liste_amis a
+    {
+        text-decoration: none;
+        color: #9C4800; /*couleur de la liste d'amis*/ 
+}
+} /*fermeture de la balise pour responsive format mobile*/
+
+/*ALIGNEMENT CAROUSEL ET AMIS
+.footer_aligne span.gauche {
+  float: left;
+}*/
+.footer_aligne{
+    float: center;
+    text-align: center;
+    margin: 20px 20px 20px; /* 3 valeurs */
+}

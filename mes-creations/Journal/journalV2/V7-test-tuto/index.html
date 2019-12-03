@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <meta charset="utf-8"/>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> <!--pour l'effet menu decallage a droite -->
+       <link rel="stylesheet" type="text/css" href="function.js" />
+
+       <link rel="stylesheet" type="text/css" href="bssnip.css" />
+         <!-- 
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bahagia">
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fenway"> -->
+                    <title>Jones and CO </title>
+</head>
+
+<!------ Include the above in your HEAD tag ---------->
+
+        
+       
+        <nav class="navbar navbar-expand navbar-dark bg-primary"> <a href="#menu-toggle" id="menu-toggle" class="navbar-brand">  <span class="navbar-toggler-icon"></span><!-- menu sandwich --> </a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"> </span> </button>
+            <div class="collapse navbar-collapse" id="navbarsExample02"> 
+
+            <span class="header">
+                <div class="nav-item"><img src="images/world-travel.png"></div>
+                <div class="text">Header text</div>
+            </span> 
+
+           
+            </div>
+        </nav>
+        <nav class="menu">
+        <div id="wrapper" class="toggled">
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand"> <a href="#"> Start Bootstrap </a> </li>
+                    <li> <a href="#">Accueil</a> </li>
+                    <li> <a href="#">Blog</a> </li>
+                    <li> <a href="#">Overview</a> </li>
+                    <li> <a href="#">Events</a> </li>
+                    <li> <a href="#">Voyage</a> </li>
+                    <li> <a href="#">Services</a> </li>
+                    <li> <a href="#">Contact</a> </li>
+                </ul>
+            </div> <!-- /#sidebar-wrapper -->
+        </div>
+        </nav>
+
+          <body>
+              
+          </body>  
+    
+        <!-- Bootstrap core JavaScript -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script> <!-- Menu Toggle Script -->
+        <script>
+          $(function(){
+            $("#menu-toggle").click(function(e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+            });
+
+            $(window).resize(function(e) {
+              if($(window).width()<=768){
+                $("#wrapper").removeClass("toggled");
+              }else{
+                $("#wrapper").addClass("toggled");
+              }
+            });
+          });
+           
+        </script>
+   
+  </html>

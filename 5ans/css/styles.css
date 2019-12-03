@@ -1,0 +1,159 @@
+body
+{
+	background:url(../images/panorama-kauai.jpg);
+	background-size:cover;
+    margin:0;
+    width:100%;
+    height:100%;
+    background-repeat:no-repeat;
+}
+.site  /* type de police de tout le site*/
+{
+	font-family: 'Indie Flower', sans-serif;
+}
+.text-logo /* titre du site '5 ans de vie commune'*/
+{
+	font-family: 'Indie Flower', sans-serif;
+	color: #2b77b3; /* couleur des lettre 5 ans vie commue*/
+	text-shadow: 3px 2px #995220; /* jaune contour des lettre du titre du site */
+	font-size: 70px; /* taille du titre de la page*/
+	padding: 50px 20px; /* ecart entre le titre et le haut de la page*/
+	text-align: center;
+}
+.text-logo .glyphicon /* coeur qui entour le titre*/
+{
+	color: #2b77b3;/* 1 er coeur */
+	text-shadow: 42px 42px #598516; /* le coeur du dessous*/
+}
+.nav /* ecart entre menu et le contenu de la page*/
+{
+	margin-bottom: 50px;
+}
+.thumbnail img /* carousel */
+{
+	text-align: center;
+	background: #995220;
+	opacity: 1;
+}
+.caption > h4 /* titre de la 1 page*/
+{
+	text-align: center;
+	color: #2b77b3;
+	font-size: 50px;
+}
+.carousel-caption > h3/*   taille des commentaire sur les img*/
+{
+	text-align: center;
+	color: #00d815;
+	font-size: 12px;
+} 
+
+.caption > p /* ce qui concerne la 1ere page notre vie*/
+{
+	text-align: center;
+	background color: #7604f7;/*#6a9811;*/
+	color: #7604f7;/*#6a9811;*/
+	font-size: 18px;
+}
+.caption > .glyphicon /*??*/
+{
+	color: #d11d56; /* #02f975; */
+	text-shadow: 3px 6px #ffd301;
+}
+.thumbnail > h4 /* titre des pages*/
+{
+	text-align: center;
+	color: #f70000; /* voir quel autre couleur */
+	font-size: 30px;
+}
+.thumbnail  /* couleur de fond de page*/
+{
+	background-color: #9cdbfc;
+	opacity: 0.98;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover /* couleur du carre  du menu*/
+{
+	background: #3b7daf;
+}
+.nav>li>a:focus, .nav>li>a:hover /* au survol de la souris sur le menu*/
+{
+	color: #3b7daf;
+	background-color: #995220; /* marron*/
+}
+.nav>li>a /* menu*/
+{
+	text-align: center;
+	color: #3b7daf; /*ecriture*/
+	font-size: 35px;
+	text-shadow: 3px 3px #919ea5;/*faire un effet epais */
+}
+/* FORM*/
+.caption > p /* tout les p du site*/
+{
+	text-align: center;
+	font-size: 23px;
+	color: #598516;
+}
+#form > .label > .input /* oui ou non */
+{
+	text-align: center;
+}
+.glyphicon-heart
+{
+	color:#3b7daf;
+	font-size: 35px;
+} 
+.bleu /*  **** pour le mail */
+{
+	color: #1dff00;
+}
+#quest-form .thank-you
+{
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #ad22a1;
+
+}
+.button2
+{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff; /* ecriture*/
+    border: 3px solid #3b7daf;
+    display: inline-block;
+    margin-top:  20px;
+    padding: 18px 50px;
+    border-radius: 3px;
+    transition: all 0.3s ease-in 0s;
+    background: #3b7daf;
+}
+.button2:hover /* au survole de la souris*/
+{
+    background: #995220;
+    color: #3b7daf; /* couleur du text*/
+    
+}
+/* FOOTER */
+footer
+{
+    background: #2b77b3; /* fond*/
+    padding: 60px 0 100px;
+}
+footer .glyphicon
+{
+    font-size:  60px;
+    margin: 40px;
+    color: #995220;
+    height: 60px;
+}
+footer .glyphicon:hover
+{
+    font-size:  100px;
+}
+footer h5
+{
+    color: #efefef;
+    font-weight: normal;
+}

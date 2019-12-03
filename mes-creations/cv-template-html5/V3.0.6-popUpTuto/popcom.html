@@ -1,0 +1,72 @@
+<HTML><HEAD><TITLE></TITLE>
+<SCRIPT type="text/JavaScript">
+//D'autres scripts sur http://www.toutjavascript.com
+//Si vous utilisez ce script, merci de m'avertir !  < webmaster@toutjavascript.com >
+function OuvrirPopup(page,nom,option) {
+  window.open(page,nom,option);
+}
+
+
+</SCRIPT></HEAD>
+<BODY bgcolor="yellow">
+<FONT face="arial" color="navy" size="2">
+
+
+
+<form action="" method="post">
+		<div class="col-6 col-12-small">
+			<div class="input text required">
+				<label class="nomChamp" for="Name">Votre nom :  <span class="red">*</span></label>
+				<input type="text" name="Name" maxlength="30" id="Name" required>
+			</div>
+		</div>
+		<div class="col-6 col-12-small">
+			<div class="input text required">
+				<label class="nomChamp" for="email">Votre email : <span class="red">*</span></label>
+				<input type="email" name="email" maxlength="50" id="email" required>
+			</div>
+		</div>
+		<div class="col-12">
+			<div class="input text required">
+				<label class="nomChamp" for="Sujet">Sujet : <span class="red">*</span></label>
+				<input type="text" name="Sujet" maxlength="30" id="Sujet" required>
+			</div>
+		</div>
+			<div class="input textarea required">
+				<label class="nomChamp" for="Message">Votre message : <span class="red">*</span></label>
+				<textarea name="Message" cols="30" rows="6" id="Message" required ></textarea>
+			</div>	
+			<br>
+		<div class="submit">
+			<INPUT type="button" value="envoyer" onClick="OuvrirPopup('popchoix.html','popupchoix','width=300,height=150,menubar=no,status=no')"><BR>
+
+		</div>
+	</form>
+ 					<?php //Envoie du mail 
+
+						      if(isset($_POST['message'])){
+						        $entete  = 'MIME-Version: 1.0' . "\r\n";
+						        $entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+						        $entete .= 'From: ' . $_POST['email'] . "\r\n";
+
+						        $message = '<h1>Message envoyé depuis la page Contact de monsite.fr</h1>
+						        <p><b>Nom : </b>' . $_POST['nom'] . '<br>
+						        <b>Email : </b>' . $_POST['email'] . '<br>
+						        <b>Message : </b>' . $_POST['message'] . '</p>';
+
+						        $retour = mail('miss.thaeronya@gmail.com', 'Envoi depuis page Contact', $message, $entete);
+						        
+
+					?>
+						
+	
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<CENTER><FONT size="1" face="arial" color="#00000">Tout JavaScript.com</FONT></A></CENTER>
+</FONT>
+</BODY></HTML>

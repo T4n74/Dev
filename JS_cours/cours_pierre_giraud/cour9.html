@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Les objets en JavaScript</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<h1>Les objets</h1>
+		<script>
+			//cette variable stocke une valeur primitive
+			var primitive = "Je suis une valeur primitive";
+
+			//Cette variable stocke un objet
+			var moi = {
+				//Les paires "nom=valeur" ont des propriétés
+				prenom :"Ophélie",
+				nom : "Thae",
+				age : 24,
+				//identite est une propriété
+				//identite() est une methode
+				identite : function(){
+					return 'Prénom : ' + this.prenom +
+							'\nNom : ' + this.nom +
+							'\nAge : ' + this.age;
+				}
+			};
+		</script>
+	</body>
+</html>

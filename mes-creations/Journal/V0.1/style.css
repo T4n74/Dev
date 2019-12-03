@@ -1,0 +1,46 @@
+/*GENERAL*/
+body 
+{
+    font-family: Arial,sans-serif;
+    font-size: 15px;
+}
+a /* supp soulignement & coloré le texte du menu*/
+{
+    text-decoration: none;
+    color: #444;
+        float: left;
+
+}
+/* HEADER*/
+.wrapper
+{
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+header nav ul li /*sur la meme ligne*/
+{
+    float:left;
+    display: inline-block;
+}
+header nav ul li a /* decoller logo de la gauche*/
+{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 20px;
+}
+/*  IMAGE*/
+#main-image
+{
+	margin-top: 150px;
+    height: 200px;
+    border-radius: 5px; /*contour de l'img*/
+    background: url('images/montagne1.jpg')center;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+}
+/* ARTICLE & A PROPOS*/
+
+/*FOOTER*/

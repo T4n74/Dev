@@ -1,0 +1,345 @@
+/*TITRE*/
+.title
+{
+    color: #017dc5;
+}
+/* MENU */
+.navbar
+{
+    background: #fff; /*couleur de la bande d'en haut derriere le menu; */
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.navbar .navbar-collapse /*titres du site */
+{
+    text-align: center;
+    font-family: arial; /* voir si plus joli*/
+}
+.navbar li a
+{
+    color: #0179bf !important; /* couleur ecriture du menu */
+}
+.navbar-nav li a:hover, .navbar-nav li.active a
+{
+    color: #fff !important; /*couleur ecriture du menu selectionné*/
+    background-color: #0179bf !important; /*couleur de fond du menu selectionné*/
+}
+.navbar-default .navbar-toggle
+{
+    border-style: none;
+}
+.icon-bar
+{
+    background-color: #fff !important;
+}
+/* GENERAL */
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body 
+{
+    font-family: Arial,sans-serif;
+    font-size: 15px;
+}
+h1,h2,h3,h4
+{
+    color: black;
+    font-family: 'Crete Round', serif;
+    font-size: 45px; 
+    text-align: center;
+}
+p
+{
+    text-align: center;
+    line-height: 20px;
+    color: #017dc5;
+}
+ul
+{
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+    color: #444;
+}
+.wrapper
+{
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.bleu
+{
+    color: #ff7a00;
+}
+.clear
+{
+    clear: both;   
+}
+small
+{
+    font-size: 13px;
+    font-style:italic;
+}
+
+/* HEADER */
+
+header 
+{
+    height: 120px;   
+}
+header h1
+{
+    float: left;
+    margin-top: 32px;
+}
+header nav
+{
+    float: right;   
+    margin-top: 50px;
+}
+header nav ul li
+{
+    float:left;
+    display: inline-block;
+}
+header nav ul li a
+{
+    /*text-transform: uppercase;*/
+    font-weight: normal;
+    margin-right: 20px;
+}
+.flotte /*logo Nemoxia*/
+{
+    float: left;
+}
+
+/* MAIN IMAGE 
+
+#main-image
+{
+    height: 580px;
+    background: url('images/logo.jpg') center;
+}   voir une img autre sa ne rend pas beau
+*/
+#main-image h1 /*qui sommes nous */
+{
+    font-weight: normal;
+    text-align: center;
+    padding: 100px 0 20px 0;/* espace coté au dessus et en dessous du titre */
+}
+
+
+/* STEPS */
+
+#steps ul
+{
+    margin: 80px 0;
+}
+#steps ul li
+{
+    width: auto;/*60 px*/
+    float:center;
+    padding-top: auto;/*140px*/
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  
+}
+#steps h2
+{
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px; 
+}
+#steps 
+{
+    background-color: #017dc5;
+}
+
+#steps p
+{
+    color: #fff;
+    font-family:arial;
+}
+
+
+/* POSSIBILITIES */
+
+/*couleur fond gris leger*/
+#possibilities
+{
+    padding: 60px 0;
+    text-align: center;
+}
+#possibilities article
+{
+    width: auto; /* titre nos metiers*/
+    height: auto; /*couleur de fond qui s'ajuste a la quantité de texte */
+    float: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+article h2/*ligne en dessous de 2 titres*/
+{
+    border-bottom:  1px solid #017dc5;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#possibilities .about p
+{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#possibilities .about h1 /* au secour */
+{
+    text-align: center;
+}
+
+
+/*CONTACT*/
+.blue
+{
+    color: #fff; /*des champs obligatoire !!!*/
+    font-family:arial; /* pour que le menu et nemoxia en bas de page es la meme police*/
+}
+#contact
+{
+    font-family:arial;
+    text-align: center;
+    background: #017dc5; /*  couleur derriere la partie contact  */
+}
+#contact .heading h2
+{
+    text-align: center;
+    color: #017dc5;
+}
+#contact-form
+{
+    font-size: 20px; /* taille de la police des noms des champs*/
+    background:#017dc5;/*cfd3f9; pour fair un contraste */
+    padding: 30px; /* pour faire la difference entre le bord du blanc et le fond blanc*/
+    border-radius: 10px; /* pour faire la difference entre lefond blanc*/
+    color: #fff; /*couleur du text nom des champs*/
+}
+.form-control
+{
+    height: 70px;
+    font-size: 20px;
+    color: #017dc5; /* couleur des encadrer*/
+}
+.comments
+{
+    font-style: italic;
+    font-size: 18px;
+    color: #fff;
+    height:25px;
+}
+#contact-form input[type=submit]
+{
+    margin:40px auto 0px;
+}
+#contact-form .thank-you
+{
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 12px;
+    color: black;
+}
+.button2 /*bouton envoie parti contact*/
+{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    border: 4px solid white; /* encadrer du bouton envoyer*/
+    display: inline-block;
+    margin-top:  20px;
+    padding: 18px 50px;
+    border-radius: 3px;
+    transition: all 0.3s ease-in 0s;
+    background: transparent;
+}
+.button2:hover
+{
+    background: white;
+    color: #017dc5; /*ecriture du contact envoyer */
+    text-decoration: none;
+}
+#contact .about choix
+{
+    color: #fff; /* couleur de "Quel est votre demande?"*/
+}
+
+/* FOOTER */
+
+footer
+{
+    height: 260px;
+    background-color: #444;
+}
+footer h1
+{
+    color:#fff;
+    text-align: center;
+    padding-top: 80px;
+}
+.copyright
+{
+    text-align: center;
+    font-weight: bold;
+    padding-top: 30px;
+    color: #777;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

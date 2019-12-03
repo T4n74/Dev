@@ -1,0 +1,164 @@
+/*******************************************************************************
+ *              bootstrap-rtl (version 4.0.0 beta2)
+ *      Author: Morteza Ghalambor
+ *  Created on: september 7,2016
+ *     Project: bootstrap-rtl
+ *   Copyright: GPL
+ *******************************************************************************/
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+/* border-top-color: #555;*/
+/* border-bottom-color: #555;*/
+}
+
+body {
+    direction: rtl;
+    text-align:right
+}
+
+dd {
+    margin-right: 0;
+}
+
+figure {
+    margin: 0 0 1rem;
+}
+
+caption {
+    text-align: right;
+}
+
+th {
+    text-align: right;
+}
+
+.list-unstyled {
+    padding-right: 0;
+}
+
+.list-inline {
+    padding-right: 0;
+}
+
+.list-inline-item:not(:last-child) {
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+.blockquote {
+    border-left: none;
+    border-right: 0.25rem solid #eceeef;
+}
+
+.blockquote-reverse {
+    padding-left: 1rem;
+    padding-right: 0;
+    text-align: left;
+    border-left: 0.25rem solid #4CFA00  /*eceeef*/;
+    border-right: 0;
+}
+
+dl.row > dd + dt {
+    clear: right;
+}
+
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+
+body {
+  overflow-x: hidden;
+}
+
+#wrapper {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+}
+
+#wrapper.toggled {
+  padding-right: 250px;
+/*     background-color: black;   effet de couleur qui change des que le menu deroule a droite ^^
+*/}
+
+#sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  right: 250px;
+  width: 0;
+  height: 100%;
+  margin-right: -250px;
+  overflow-y: auto;
+  background: #000; /* */
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  width: 250px;
+  background-color: black; /* couleur de fond du menu  droite*/
+}
+
+#page-content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+  position: absolute;
+  margin-right: 0px;
+}
+
+
+/* Sidebar Styles */
+
+.sidebar-nav {  /* parti haute du menu*/
+  position: absolute;
+  top: 0;
+  width:250px;
+  margin: center;
+  padding: 0;
+  list-style: none;
+
+}
+
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px;
+}
+
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  color: white; /*liste  menu*/
+}
+
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color:#FF7800; /* couleur du menu au survole de la souris *
+/*  background:pink rgba(255, 255, 255, 0.2); /* couleur du menu au survole de la souris *
+*/}
+
+.sidebar-nav li a:active, .sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav>.sidebar-brand {
+  height: 65px;
+  font-size: 18px;
+  line-height: 60px;
+}
+
+.sidebar-nav>.sidebar-brand a {
+  color: #FF7800;/* titre du menu*/
+}
+

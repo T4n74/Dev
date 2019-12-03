@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js"></script>
+
+<table width="85%"> <!-- supp border quand tp fini-->
+      
+    <tr>
+      <td colspan="2" align="left"><h1>checkout</h1></td> <!-- td au lieu de th -->
+      <td colspan="2" align="right"> <!-- chiffre d'evolution de paiement a droite -->
+        <div class="col-md-7"> <!--barre de chargement -->
+          <div class="col-md-2"> 
+            <div id="widget">  
+              <div id="progressbar">
+                 <div id="indicator"></div>
+              </div>
+            </div>
+          </div>
+        </div>    <!-- !!!! comment les mettre sur une seule et meme ligne -->
+          <div id="progressnum">1</div>
+          <div id="progressnum">2</div>
+          <div id="progressnum">3</div>
+          <div id="progressnum">4</div>
+      </td>
+    </tr>
+    <tr><!-- pour que la ligne est une ligne a elle seule et non dans la cellule de checkout-->
+      <td colspan="4"> <!-- pour que la ligne prenne toute la longueur du tab -->
+        <hr size="2" width="80%" color="pink" align="center"><!-- ligne en dessous de checkout -->
+      </td> 
+    </tr>                  
+    <tr> 
+        <hr size="4" width="75%" color="pink" align="center"> <!-- ligne tout en haut de la page-->
+    </tr>
+
+    <tr>
+      <td width="42.5%"><img src="images/elephant_resultat.jpg" border="5" align="left"> <div>Papuche elephant et son panier de plumes</div> <br> 
+              <div class="description">color : pink and grey</div>
+              <div class="quantite">1</div>
+      </td><!-- cellule A -->
+      <td> <!--cellule B-->
+      </td>
+    </tr>
+
+    <tr>
+      <td width="42.5%"><img src="images/pexels_resultat.jpeg" border="5" align="left">
+          <p>Ourson en peluche</p> <br> 
+          <p class="description">color : beige</p> 
+          <p class="quantite">1</p>
+      </td><!--cellule C-->
+      <td><!--cellule D :-->
+        <div width="42.5%" align=right><p class="price">Price € .................................... 50</p></div>
+        <div width="42.5%" align=right><p class="vat">VAT(15%) € .................................... 7.50</p></div>
+        <div width="42.5%" align=right><p class="total">total</p></div> 
+      </td>
+    </tr>
+
+</table>
+
+</head>
+
+</html>

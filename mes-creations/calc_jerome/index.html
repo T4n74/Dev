@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Calculatrice</title>
+	</head>
+
+	<body>
+		<div id="bloc_page" style="text-align:center;">
+	            <header>
+	            	<div id="titre_principal">
+	                    <h1>Calculatrice</h1>
+	                </div>
+	    		</header>
+	    </div>
+		<div style="text-align:center;">
+			<form action="resultat.php" method="POST" name="calculatrice">
+		
+
+			<p><input type="text" name="nombre1" autocomplete="off">
+			
+			<select name="choix">
+				<option value="addition">+</option>
+				<option value="soustraction">-</option>
+				<option value="multiplication">*</option>
+				<option value="division">/</option>
+			</select>
+		 
+			<input type="text" name="nombre2" autocomplete="off"></p>
+		
+
+		<input type="submit" value="calculer">
+		<input type="reset" value="effacer">
+
+		</from>
+		</div>
+	</body>
+</html>

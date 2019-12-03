@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Les objets en JavaScript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Les objets</h1>
+        <script>
+            //On crée un constructeur  "Identite()"
+            function Identite(p, n, a){
+                this.prenom = p;
+                this.nom = n;
+                this.age = a;
+            }
+            
+            //On crée un premier objet
+            var pierre = new Identite("Pierre", "Giraud", 25);
+
+            //On crée ensuite victor que l'on donne "égal" à pierre
+            var victor = pierre;
+            
+            /*Si on modifie la valeur du prénom de victor, pierre
+             *sera également impacté car victor et pierre représentent
+             *le même objet*/
+            victor.prenom = "dsfjkl";
+            
+            //On peut s'en convaincre en affichant le résultat
+            alert('Prénom de Pierre : ' + pierre.prenom +
+                  '\nPrénom de Victor : ' + victor.prenom);
+        </script>
+    </body>
+</html>
+
+

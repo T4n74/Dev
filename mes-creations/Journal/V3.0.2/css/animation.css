@@ -1,0 +1,41 @@
+#wrapper-carrousel{
+  width:600px;
+  -webkit-perspective: 800;
+  margin: 150px auto 0 auto;
+}
+
+.carrousel{
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  -webkit-transform-style: preserve-3d; /* delai */
+  -webkit-animation: Caroussel 10s infinite linear;
+}
+
+.plan{     /* afin de les supperposé*/
+  position:absolute;
+  height: 200px;
+  width: 150px; /* largeur des elements*/
+  text-align:center;
+  font-size: 8em;
+  color:#FFF;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+}
+/*Pour rendre dynamique le carrousel*/
+@-webkit-keyframes Caroussel{
+  
+  from { -webkit-transform: rotateY(0); }
+  to { -webkit-transform: rotateY(360deg); }
+}
+
+
+/*Pour le coter arrondi du carrousel*/
+.p1{ -webkit-transform: translateZ(200px);}
+.p2{ -webkit-transform: rotateY(45deg) translateZ(200px);}
+.p3{ -webkit-transform: rotateY(90deg) translateZ(200px);}
+.p4{ -webkit-transform: rotateY(135deg) translateZ(200px);}
+.p5{ -webkit-transform: rotateY(180deg) translateZ(200px);}
+.p6{ -webkit-transform: rotateY(225deg) translateZ(200px);}
+.p7{ -webkit-transform: rotateY(270deg) translateZ(200px);}
+.p8{ -webkit-transform: rotateY(315deg) translateZ(200px);}

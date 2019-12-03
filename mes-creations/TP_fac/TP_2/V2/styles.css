@@ -1,0 +1,72 @@
+table
+{
+    /*border-collapse: collapse;  Les bordures du tableau seront collées (plus joli) */
+    
+    background-color: #fff;
+}
+/*cercle n° de suivis*/
+.circle {
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+    text-align: right;
+    border-radius: 400px;
+    line-height: 90px; /*100 - 10*/
+
+}
+.type2 {
+    width: 50px;
+    height: 50px;
+    background: #ccc;
+    border: 3px solid #000;
+    text-align: center;
+}
+.col-md-8{
+    text-align: left;
+    font-size: 25px;
+}
+td, th /* Mettre une bordure sur les td ET les th*/
+{
+    border: none;
+}
+body
+{
+	background-color: #b2a6a9;
+}
+.propriete
+{
+    width: 100px;
+    height: 200px;
+    background: url('images/iPhone6conv.jpg') no-repeat;
+}
+tfoot #color
+{
+	background-color: #ef07c5;
+
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: 100px;
+  grid-template-areas: 
+    "a a a a b b b b"
+    "c c c c d d d d"
+    "e e e e f f f f"
+    "g g g g h h h h";
+}
+.price {
+  grid-area: b;
+  align-self: start;
+}
+.FraisPort {
+  grid-area: d;
+  align-self: start;
+}
+.tva {
+  grid-area: f;
+  align-self: start;
+}
+.total {
+  grid-area: h;
+  align-self: start;
+}

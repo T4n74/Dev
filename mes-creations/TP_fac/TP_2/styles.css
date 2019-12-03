@@ -1,0 +1,61 @@
+table
+{
+    /*border-collapse: collapse;  Les bordures du tableau seront collées (plus joli) */
+    
+    background-color: #fff;
+}
+/*cercle n° de suivis*/
+.circle {
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+    text-align: center;
+    border-radius: 300px;
+    <strong>line-height: 90px; /*100 - 10*/</strong>
+
+}
+.type2 {
+    width: 50px;
+    height: 50px;
+    background: #ccc;
+    border: 3px solid #000;
+    text-align: center;
+}
+td, th /* Mettre une bordure sur les td ET les th*/
+{
+    border: none;
+}
+body
+{
+	background-color: #b2a6a9;
+}
+.propriete
+{
+    width: 100px;
+    height: 200px;
+    background: url('images/iPhone6conv.jpg') no-repeat;
+}
+tfoot #color
+{
+	background-color: #fc00ce;
+
+}
+.price
+{
+	text-decoration: none;
+	text-align: right;
+	color: red;
+	font-size: 1.2em;
+}
+.chiffre
+{
+	text-decoration: none;
+	text-align: right;
+	color: red;
+	font-size: 1.2em;
+}
+.dispo
+{
+	color: #00ff11;
+	text-align: right;
+
+}

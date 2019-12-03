@@ -1,0 +1,43 @@
+table
+{
+    border-collapse: collapse; /* Les bordures du tableau seront collées (plus joli) */
+    background-color: #fff;
+}
+td, th /* Mettre une bordure sur les td ET les th*/
+{
+    border: 1px solid black;
+}
+body
+{
+	background-color: #b2a6a9;
+}
+.propriete
+{
+    width: 100px;
+    height: 200px;
+    background: url('images/iPhone6conv.jpg') no-repeat;
+}
+tfoot #color
+{
+	background-color: #fc00ce;
+
+}
+.price
+{
+	text-align: left;
+}
+.chiffre
+{
+	text-align: right;
+	color: red;
+	font-size: 1.2em;
+}
+.dispo
+{
+	color: #00ff11;
+	text-align: center;
+a
+{
+color: white;
+text-decoration: none;
+}
